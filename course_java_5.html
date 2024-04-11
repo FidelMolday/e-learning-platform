@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Java - Decision Making</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../styles/bootstrap4/bootstrap.min.css">
+<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+<link href="../plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/animate.css">
+<link href="../plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="main_style.css">
+<link rel="stylesheet" type="text/css" href="responsive.css">
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .w3-sidebar {
+        /*z-index: 3;*/
+        width: 250px;
+        top: 50px;
+        bottom: 0;
+        /*height: inherit;*/
+    }
+    
+    .w3-bar-item {
+        font-size: 13px;
+    }
+    
+    .w3-text-teal {
+        font-size: 25px;
+    }
+    
+    .tutorial img {
+        width: 1500px;
+        height: 150px;
+        padding-left: 250px;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="header" style="position:relative">
+
+
+
+        <!-- Header Content -->
+        <div class="header_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                            <div class="logo_container">
+                                <a href="#">
+                                    <div class="logo_content d-flex flex-row align-items-end justify-content-start">
+                                        <div class="logo_img"><img src="../images/logo.png" alt=""></div>
+                                        <div class="logo_text">Learning Space</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <nav class="main_nav_contaner ml-auto">
+                                <ul class="main_nav">
+                                    <li><a href="index.html">home</a></li>
+                                    <li><a href="about.html">about us</a></li>
+                                    <li class="active"><a href="courses.html">courses</a></li>
+                                    <li><a href="contact.html">contact</a></li>
+                                </ul>
+                                <div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
+
+                                <!-- Hamburger -->
+
+                                <div class="hamburger menu_mm">
+                                    <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+                                </div>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Search Panel -->
+        <div class="header_search_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header_search_content d-flex flex-row align-items-center justify-content-end">
+                            <form action="#" class="header_search_form">
+                                <input type="search" class="search_input" placeholder="Search" required="required">
+                                <button class="header_search_button d-flex flex-column align-items-center justify-content-center">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Sidebar -->
+
+    <nav class="w3-sidebar w3-bar-block w3-collapse " style="background-color: #ccffcc" id="mySidebar">
+
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="../images/java.png" alt="" style="height:220px; width: 250px">
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_1.html">OVERVIEW OF JAVA</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_2.html">Java - Object and Classes</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_3.html">Java - Basic Datatypes</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_4.html">Java - Loop Control</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_5.html">Java - Decision Making</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_6.html">Java - Exceptions</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">OTHER</a>
+        
+
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <div class="tutorial">
+        <img src="../images/java1.png" style="height:180px; width: 1360px">
+    </div>
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+        
+       <div style="background-color: #ccffcc">
+        
+         <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <center><h2><b>Java - Decision Making</b></h2></center>
+                <p>
+                    Decision making structures require that the programmer specifies one or more conditions to be evaluated or tested by the program, along with a statement or statements to be executed if the condition is determined to be true, and optionally, other statements to be executed if the condition is determined to be false.
+                <p>Show below is the general form of a typical decision making structure found in most of the programming languages </p>
+                <center><img src="../images/1.jpg"></center>
+                <p>C programming language assumes any non-zero and non-null values as true, and if it is either zero or null, then it is assumed as false value.
+                <p>C programming language provides the following types of decision making statements.
+                </p>
+                
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">1.If Statements</h1>
+                <p>
+                  The if statement allows you to control if a program enters a section of code or not based on whether a given condition is true or false. ... One of the important functions of the if statement is that it allows the program to select an action based upon the user's input.  
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">2.If-else Statement</h1>
+                <p>
+                    The if-else statement in C is used to perform the operations based on some specific condition. The operations specified in if block are executed if and only if the given condition is true. There are the following variants of if statement in C language. If statement.
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">3.Nested-if Statemen</h1>
+                <p>
+                    A nested if in C is an if statement that is the target of another if statement. Nested if statements means an if statement inside another if statement. Yes,  C  allows us to nested if statements within if statements, i.e, we can place an if statement inside another if statement.
+                </p>
+            </div>
+        </div>
+        
+         <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">4.Switch Statement</h1>
+                <p>
+                    n computer programming languages, a switch statement is a type of selection control mechanism used to allow the value of a variable or expression to change the control flow of program execution via search and map.
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">5.Nested Switch Statement </h1>
+                <p>
+                    It is possible to have a switch as a part of the statement sequence of an outer switch. Even if the case constants of the inner and outer switch contain common values, no conflicts will arise.
+                </p>
+            </div>
+        </div>
+        
+        
+        
+
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+         <div class="w3-bar">   
+            <div class="pagination justify-content-center">
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_1.html">1</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_2.html">2</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_3.html">3</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_4.html">4</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_5.html">5</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_6.html">6</a>
+                <a class="page-link" href="#">»</a>
+            </div>    
+         </div>      
+        </div>
+
+       </div>
+
+        
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <!-- About -->
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_about">
+                            <div class="logo_container">
+                                <a href="#">
+                                    <div class="logo_content d-flex flex-row align-items-end justify-content-start">
+                                        <div class="logo_text">Learning Space</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="footer_about_text">
+                                <p>Choose Your course and Start Learning at your own pace. Start a Journey today with Learning Space.</p>
+                            </div>
+                            <div class="footer_social">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="copyright">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script> All rights reserved | Learning Space</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_links">
+                            <div class="footer_title">Quick menu</div>
+                            <ul class="footer_list">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_links">
+                            <div class="footer_title">Useful Links</div>
+                            <ul class="footer_list">
+                                <li><a href="courses.html">Courses</a></li>
+                                <li><a href="links.html">Links</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_contact">
+                            <div class="footer_title">Contact Us</div>
+                            <div class="footer_contact_info">
+                                <div class="footer_contact_item">
+                                    <div class="footer_contact_title">Address:</div>
+                                    <div class="footer_contact_line">India, West Bengal, Kolkata</div>
+                                </div>
+                                <div class="footer_contact_item">
+                                    <div class="footer_contact_title">Phone:</div>
+                                    <div class="footer_contact_line">+91 9876543210</div>
+                                </div>
+                                <div class="footer_contact_item">
+                                    <div class="footer_contact_title">Email:</div>
+                                    <div class="footer_contact_line">learningspace@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

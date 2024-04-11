@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Basic Datatypes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../styles/bootstrap4/bootstrap.min.css">
+<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+<link href="../plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="animate.css">
+<link href="../plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="main_style.css">
+<link rel="stylesheet" type="text/css" href="responsive.css">
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .w3-sidebar {
+        /*z-index: 3;*/
+        width: 250px;
+        top: 50px;
+        bottom: 0;
+        /*height: inherit;*/
+    }
+    
+    .w3-bar-item {
+        font-size: 13px;
+    }
+    
+    .w3-text-teal {
+        font-size: 25px;
+    }
+    
+    .tutorial img {
+        width: 1500px;
+        height: 150px;
+        padding-left: 250px;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="header" style="position:relative">
+
+
+
+        <!-- Header Content -->
+        <div class="header_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                            <div class="logo_container">
+                                <a href="#">
+                                    <div class="logo_content d-flex flex-row align-items-end justify-content-start">
+                                        <div class="logo_img"><img src="logo.png" alt=""></div>
+                                        <div class="logo_text">Learning Space</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <nav class="main_nav_contaner ml-auto">
+                                <ul class="main_nav">
+                                    <li><a href="index.html">home</a></li>
+                                    <li><a href="about.html">about us</a></li>
+                                    <li class="active"><a href="courses.html">courses</a></li>
+                                    <li><a href="contact.html">contact</a></li>
+                                </ul>
+                                <div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
+
+                                <!-- Hamburger -->
+
+                                <div class="hamburger menu_mm">
+                                    <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+                                </div>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Search Panel -->
+        <div class="header_search_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header_search_content d-flex flex-row align-items-center justify-content-end">
+                            <form action="#" class="header_search_form">
+                                <input type="search" class="search_input" placeholder="Search" required="required">
+                                <button class="header_search_button d-flex flex-column align-items-center justify-content-center">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Sidebar -->
+
+    <nav class="w3-sidebar w3-bar-block w3-collapse " style="background-color: #ccffcc" id="mySidebar">
+
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="../images/java.png" alt="" style="height:220px; width: 250px">
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_1.html">OVERVIEW OF JAVA</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_2.html">Java - Object and Classes</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_3.html">Java - Basic Datatypes</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_4.html">Java - Loop Control</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_5.html">Java - Decision Making</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_6.htmls">Java - Exceptions</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">OTHER</a>
+        
+
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <div class="tutorial">
+        <img src="java1.png" style="height:180px; width: 1360px">
+    </div>
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+       
+        <div style="background-color: #ccffcc"> 
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <center><h2><b>Java - Basic Datatypes</b></h2></center>
+                <p>Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in the memory.
+                <p>Based on the data type of a variable, the operating system allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to variables, you can store integers, decimals, or characters in these variables.
+                <p>There are two data types available in Java −
+                <p>1.Primitive Data Types
+                <p>2.Reference/Object Data Types
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Primitive Data Types</h1>
+                <p>
+                    There are eight primitive datatypes supported by Java. Primitive datatypes are predefined by the language and named by a keyword. Let us now look into the eight primitive data types in detail.
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">byte:-</h1>
+                <p>Byte data type is an 8-bit signed two's complement integer
+                <p>Minimum value is -128 (-2^7)
+                <p>Maximum value is 127 (inclusive)(2^7 -1)
+                <p>Default value is 0
+                <p>Byte data type is used to save space in large arrays, mainly in place of integers, since a byte is four times smaller than an integer.
+                <p>Example: byte a = 100, byte b = -50 
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">short:-</h1>
+                <p>Short data type is a 16-bit signed two's complement integer
+                <p>Minimum value is -32,768 (-2^15)
+                <p>Maximum value is 32,767 (inclusive) (2^15 -1)
+                <p>Short data type can also be used to save memory as byte data type. A short is 2 times smaller than an integer
+                <p>Default value is 0.
+                <p>Example: short s = 10000, short r = -20000
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">int:-</h1>
+                <p>Int data type is a 32-bit signed two's complement integer.
+                <p>Minimum value is - 2,147,483,648 (-2^31)
+                <p>Maximum value is 2,147,483,647(inclusive) (2^31 -1)
+                <p>Integer is generally used as the default data type for integral values unless there is a concern about memory.
+                <p>The default value is 0
+                <p>Example: int a = 100000, int b = -200000  
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">long:-</h1>
+                <p>Long data type is a 64-bit signed two's complement integer
+                <p>Minimum value is -9,223,372,036,854,775,808(-2^63)
+                <p>Maximum value is 9,223,372,036,854,775,807 (inclusive)(2^63 -1)
+                <p>This type is used when a wider range than int is needed
+                <p>Default value is 0L
+                <p>Example: long a = 100000L, long b = -200000L 
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">float:-</h1>
+                <p>Float data type is a single-precision 32-bit IEEE 754 floating point
+                <p>Float is mainly used to save memory in large arrays of floating point numbers
+                <p>Default value is 0.0f
+                <p>Float data type is never used for precise values such as currency
+                <p>Example: float f1 = 234.5f
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">double:-</h1>
+                <p>double data type is a double-precision 64-bit IEEE 754 floating point
+                <p>This data type is generally used as the default data type for decimal values, generally the default choice
+                <p>Double data type should never be used for precise values such as currency
+                <p>Default value is 0.0d
+                <p>Example: double d1 = 123.4                  
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">boolean:-</h1>
+                <p>boolean data type represents one bit of information
+                <p>There are only two possible values: true and false
+                <p>This data type is used for simple flags that track true/false conditions
+                <p>Default value is false
+                <p>Example: boolean one = true 
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">char:-</h1>
+                <p>char data type is a single 16-bit Unicode character
+                <p>Minimum value is '\u0000' (or 0)
+                <p>Maximum value is '\uffff' (or 65,535 inclusive)
+                <p>Char data type is used to store any character
+                <p>Example: char letterA = 'A'
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Reference Datatypes</h1>
+                <p>Reference variables are created using defined constructors of the classes. They are used to access objects. These variables are declared to be of a specific type that cannot be changed. For example, Employee, Puppy, etc.
+                <p>Class objects and various type of array variables come under reference datatype
+                <p>Default value of any reference variable is null.
+                <p>A reference variable can be used to refer any object of the declared type or any compatible type.
+                <p>Example: Animal animal = new Animal("giraffe");    
+                </p>
+            </div>
+        </div>
+        
+        
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+         <div class="w3-bar">   
+            <div class="pagination justify-content-center">
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_1.html">1</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_2.html">2</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_3.html">3</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_4.html">4</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_5.html">5</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_6.html">6</a>
+                <a class="page-link" href="#">»</a>
+            </div>    
+         </div>      
+        </div>
+
+        </div>
+
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <!-- About -->
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_about">
+                            <div class="logo_container">
+                                <a href="#">
+                                    <div class="logo_content d-flex flex-row align-items-end justify-content-start">
+                                        <div class="logo_text">Learning Space</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="footer_about_text">
+                                <p>Choose Your course and Start Learning at your own pace. Start a Journey today with Learning Space.</p>
+                            </div>
+                            <div class="footer_social">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="copyright">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script> All rights reserved | Learning Space</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_links">
+                            <div class="footer_title">Quick menu</div>
+                            <ul class="footer_list">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_links">
+                            <div class="footer_title">Useful Links</div>
+                            <ul class="footer_list">
+                                <li><a href="courses.html">Courses</a></li>
+                                <li><a href="links.html">Links</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_contact">
+                            <div class="footer_title">Contact Us</div>
+                            <div class="footer_contact_info">
+                                <div class="footer_contact_item">
+                                    <div class="footer_contact_title">Address:</div>
+                                    <div class="footer_contact_line">India, West Bengal, Kolkata</div>
+                                </div>
+                                <div class="footer_contact_item">
+                                    <div class="footer_contact_title">Phone:</div>
+                                    <div class="footer_contact_line">+91 9876543210</div>
+                                </div>
+                                <div class="footer_contact_item">
+                                    <div class="footer_contact_title">Email:</div>
+                                    <div class="footer_contact_line">learningspace@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

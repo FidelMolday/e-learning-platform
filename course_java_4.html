@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Java - Loop Control</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<link rel="shortcut icon" href="favicon.png" type="x-icon">
+<link href="../plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="animate.css">
+<link href="../plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="main_style.css">
+<link rel="stylesheet" type="text/css" href="responsive.css">
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .w3-sidebar {
+        /*z-index: 3;*/
+        width: 250px;
+        top: 50px;
+        bottom: 0;
+        /*height: inherit;*/
+    }
+    
+    .w3-bar-item {
+        font-size: 13px;
+    }
+    
+    .w3-text-teal {
+        font-size: 25px;
+    }
+    
+    .tutorial img {
+        width: 1500px;
+        height: 150px;
+        padding-left: 250px;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="header" style="position:relative">
+
+
+
+        <!-- Header Content -->
+        <div class="header_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                            <div class="logo_container">
+                                <a href="#">
+                                    <div class="logo_content d-flex flex-row align-items-end justify-content-start">
+                                        <div class="logo_img"><img src="logo.png" alt=""></div>
+                                        <div class="logo_text">Learning Space</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <nav class="main_nav_contaner ml-auto">
+                                <ul class="main_nav">
+                                    <li><a href="index.html">home</a></li>
+                                    <li><a href="about.html">about us</a></li>
+                                    <li class="active"><a href="courses.html">courses</a></li>
+                                    <li><a href="contact.html">contact</a></li>
+                                </ul>
+                                <div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
+
+                                <!-- Hamburger -->
+
+                                <div class="hamburger menu_mm">
+                                    <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+                                </div>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Search Panel -->
+        <div class="header_search_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header_search_content d-flex flex-row align-items-center justify-content-end">
+                            <form action="#" class="header_search_form">
+                                <input type="search" class="search_input" placeholder="Search" required="required">
+                                <button class="header_search_button d-flex flex-column align-items-center justify-content-center">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Sidebar -->
+
+    <nav class="w3-sidebar w3-bar-block w3-collapse " style="background-color: #ccffcc" id="mySidebar">
+
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="../images/java.png" alt="" style="height:220px; width: 250px">
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_1.html">OVERVIEW OF JAVA</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_2.html">Java - Object and Classes</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_3.html">Java - Basic Datatypes</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_4.html">Java - Loop Control</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_5.html">Java - Decision Making</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_java_6.html">Java - Exceptions</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">OTHER</a>
+        
+
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <div class="tutorial">
+        <img src="java1.png" style="height:180px; width: 1360px">
+    </div>
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+       
+        <div style="background-color: #ccffcc">
+        
+       <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <center><h2><b>Java - Loop Control</b></h2></center>
+                <p>There may be a situation when you need to execute a block of code several number of times. In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.
+                <p>Programming languages provide various control structures that allow for more complicated execution paths.    
+                <p>A <b>loop</b> statement allows us to execute a statement or group of statements multiple times and following is the general form of a loop statement in most of the programming languages −
+                <center><img src="2.jpg"></center>
+                <p>Java programming language provides the following types of loop to handle looping requirements. 
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">while loop</h1>
+                <p>A while loop statement in Java programming language repeatedly executes a target statement as long as a given condition is true.
+                <p>Here, statement(s) may be a single statement or a block of statements. The condition may be any expression, and true is any non zero value.
+                <p>When executing, if the boolean_expression result is true, then the actions inside the loop will be executed. This will continue as long as the expression result is true.
+                <p>When the condition becomes false, program control passes to the line immediately following the loop.    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-34">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Flow Diagram</h1>
+                <center><img src="3.jpg"></center>
+                <p>
+                   Here, key point of the while loop is that the loop might not ever run. When the expression is tested and the result is false, the loop body will be skipped and the first statement after the while loop will be executed. 
+                </p>
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal"> for loop </h1>
+                <p>A for loop is a repetition control structure that allows you to efficiently write a loop that needs to be executed a specific number of times.
+                <p>A for loop is useful when you know how many times a task is to be repeated.
+                <p>Here is the flow of control in a for loop −
+                <p>The initialization step is executed first, and only once. This step allows you to declare and initialize any loop control variables and this step ends with a semi colon (;).
+                <p>Next, the Boolean expression is evaluated. If it is true, the body of the loop is executed. If it is false, the body of the loop will not be executed and control jumps to the next statement past the for loop.
+                <p>After the body of the for loop gets executed, the control jumps back up to the update statement. This statement allows you to update any loop control variables. This statement can be left blank with a semicolon at the end.
+                <p>The Boolean expression is now evaluated again. If it is true, the loop executes and the process repeats (body of loop, then update step, then Boolean expression). After the Boolean expression is false, the for loop terminates.
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-34">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Flow Diagram</h1>
+               <center><img src="4.jpg"></center>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">do...while loop</h1>
+                <p>A do...while loop is similar to a while loop, except that a do...while loop is guaranteed to execute at least one time.
+                <p>Notice that the Boolean expression appears at the end of the loop, so the statements in the loop execute once before the Boolean is tested.
+                <p>If the Boolean expression is true, the control jumps back up to do statement, and the statements in the loop execute again. This process repeats until the Boolean expression is false.   
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-34">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Flow Diagram</h1>
+                <center><img src="5.jpg"></center>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Loop Control Statements</h1>
+                <p>Loop control statements change execution from its normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed
+                <p>Java supports the following control statements.    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal"> break statement</h1>
+                <p>When the break statement is encountered inside a loop, the loop is immediately terminated and the program control resumes at the next statement following the loop.
+                <p>It can be used to terminate a case in the switch statement (covered in the next chapter).    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-34">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Flow Diagram</h1>
+                <center><img src="6.jpg"></center>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Continue statement</h1>
+                <p>The continue keyword can be used in any of the loop control structures. It causes the loop to immediately jump to the next iteration of the loop.
+                <p>In a for loop, the continue keyword causes control to immediately jump to the update statement.
+                <p>In a while loop or do/while loop, control immediately jumps to the Boolean expression.    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-34">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Flow Diagram</h1>
+                <center><img src="7.jpg"></center>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Enhanced for loop in Java</h1>
+                <p>As of Java 5, the enhanced for loop was introduced. This is mainly used to traverse collection of elements including arrays.
+                <p><h4>Declaration :−</h4>The newly declared block variable, is of a type compatible with the elements of the array you are accessing. The variable will be available within the for block and its value would be the same as the current array element.
+                <p><h4>Expression :−</h4>This evaluates to the array you need to loop through. The expression can be an array variable or method call that returns an array.    
+                </p>
+            </div>
+        </div>
+        
+        
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+         <div class="w3-bar">   
+            <div class="pagination justify-content-center">
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_1.html">1</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_2.html">2</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_3.html">3</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_4.html">4</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_5.html">5</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_java_6.html">6</a>
+                <a class="page-link" href="#">»</a>
+            </div>    
+         </div>      
+        </div>
+
+        </div>
+
+
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <!-- About -->
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_about">
+                            <div class="logo_container">
+                                <a href="#">
+                                    <div class="logo_content d-flex flex-row align-items-end justify-content-start">
+                                        <div class="logo_text">Learning Space</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="footer_about_text">
+                                <p>Choose Your course and Start Learning at your own pace. Start a Journey today with Learning Space.</p>
+                            </div>
+                            <div class="footer_social">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="copyright">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script> All rights reserved | Learning Space</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_links">
+                            <div class="footer_title">Quick menu</div>
+                            <ul class="footer_list">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_links">
+                            <div class="footer_title">Useful Links</div>
+                            <ul class="footer_list">
+                                <li><a href="courses.html">Courses</a></li>
+                                <li><a href="links.html">Links</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_contact">
+                            <div class="footer_title">Contact Us</div>
+                            <div class="footer_contact_info">
+                                <div class="footer_contact_item">
+                                    <div class="footer_contact_title">Address:</div>
+                                    <div class="footer_contact_line">India, West Bengal, Kolkata</div>
+                                </div>
+                                <div class="footer_contact_item">
+                                    <div class="footer_contact_title">Phone:</div>
+                                    <div class="footer_contact_line">+91 9876543210</div>
+                                </div>
+                                <div class="footer_contact_item">
+                                    <div class="footer_contact_title">Email:</div>
+                                    <div class="footer_contact_line">learningspace@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

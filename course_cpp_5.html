@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>C++ Constants/Literals</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<link rel="shortcut icon" href="favicon.png" type="x-icon">
+<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/animate.css">
+<link href="../plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="main_style.css">
+<link rel="stylesheet" type="text/css" href="responsive.css">
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .w3-sidebar {
+        /*z-index: 3;*/
+        width: 250px;
+        top: 50px;
+        bottom: 0;
+        /*height: inherit;*/
+    }
+    
+    .w3-bar-item {
+        font-size: 13px;
+    }
+    
+    .w3-text-teal {
+        font-size: 25px;
+    }
+    
+    .tutorial img {
+        width: 1500px;
+        height: 150px;
+        padding-left: 250px;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="header" style="position:relative">
+
+
+
+        <!-- Header Content -->
+        <div class="header_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                            <div class="logo_container">
+                                <a href="#">
+                                    <div class="logo_content d-flex flex-row align-items-end justify-content-start">
+                                        <div class="logo_img"><img src="logo.png" alt=""></div>
+                                        <div class="logo_text">Learning Space</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <nav class="main_nav_contaner ml-auto">
+                                <ul class="main_nav">
+                                    <li><a href="index.html">home</a></li>
+                                    <li><a href="about.html">about us</a></li>
+                                    <li class="active"><a href="courses.html">courses</a></li>
+                                    <li><a href="contact.html">contact</a></li>
+                                </ul>
+                                <div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
+
+                                <!-- Hamburger -->
+
+                                <div class="hamburger menu_mm">
+                                    <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+                                </div>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Search Panel -->
+        <div class="header_search_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header_search_content d-flex flex-row align-items-center justify-content-end">
+                            <form action="#" class="header_search_form">
+                                <input type="search" class="search_input" placeholder="Search" required="required">
+                                <button class="header_search_button d-flex flex-column align-items-center justify-content-center">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Sidebar -->
+
+    <nav class="w3-sidebar w3-bar-block w3-collapse " style="background-color: #e3f2fd;" id="mySidebar">
+
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="../images/cpp.jpg" alt="" style="height:220px; width: 260px">
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_cpp_1.html">OVERVIEW OF C++ LANGUAGE</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_cpp_2.html">C++ Basic Syntax</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_cpp_3.html">C++ Data Types</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_cpp_4.html">C++ Variable Types</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_cpp_5.html">C++ Constants/Literals</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="http://localhost:8085/LearnSpace/courses/course_cpp_6.html">C++ Modifier Types</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">OTHER</a>
+      
+
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <div class="tutorial">
+        <img src="cpp1.png" style="height:180px; width: 1460px">
+    </div>
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+        
+       <div style="background-color: #e3f2fd; "> 
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                 <center><h2><b>C++ Constants/Literals</b></h2></center>
+                <p>Constants refer to fixed values that the program may not alter and they are called <b>literals</b>.
+                <p>Constants can be of any of the basic data types and can be divided into Integer Numerals, Floating-Point Numerals, Characters, Strings and Boolean Values.
+                <p>Again, constants are treated just like regular variables except that their values cannot be modified after their definition.    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Integer Literals</h1>
+                <p>An integer literal can be a decimal, octal, or hexadecimal constant. A prefix specifies the base or radix: 0x or 0X for hexadecimal, 0 for octal, and nothing for decimal.
+                <p>An integer literal can also have a suffix that is a combination of U and L, for unsigned and long, respectively. The suffix can be uppercase or lowercase and can be in any order.    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Floating-point Literals</h1>
+                <p>A floating-point literal has an integer part, a decimal point, a fractional part, and an exponent part. You can represent floating point literals either in decimal form or exponential form.
+                <p>While representing using decimal form, you must include the decimal point, the exponent, or both and while representing using exponential form, you must include the integer part, the fractional part, or both. The signed exponent is introduced by e or E.    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Boolean Literals</h1>
+                <p>There are two Boolean literals and they are part of standard C++ keywords −
+                <p>A value of <b>true</b> representing true.
+                <p>A value of <b>false</b> representing false.
+                <p>You should not consider the value of true equal to 1 and value of false equal to 0.    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Character Literals</h1>
+                <p>Character literals are enclosed in single quotes. If the literal begins with L (uppercase only), it is a wide character literal (e.g., L'x') and should be stored in wchar_t type of variable . Otherwise, it is a narrow character literal (e.g., 'x') and can be stored in a simple variable of char type.
+                <p>A character literal can be a plain character (e.g., 'x'), an escape sequence (e.g., '\t'), or a universal character (e.g., '\u02C0').
+                <p>There are certain characters in C++ when they are preceded by a backslash they will have special meaning and they are used to represent like newline (\n) or tab (\t). Here, you have a list of some of such escape sequence codes −
+                    <center><img src="cpp5.png" ></center>
+                <p>    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">String Literals</h1>
+                <p>String literals are enclosed in double quotes. A string contains characters that are similar to character literals: plain characters, escape sequences, and universal characters
+                <p>You can break a long line into multiple lines using string literals and separate them using whitespaces.    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Defining Constants</h1>
+                <p>There are two simple ways in C++ to define constants −
+                <p>Using <b>#define</b> preprocessor.
+                <p>Using <b>const</b> keyword.    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-34">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">The #define Preprocessor</h1>
+                <p>Following is the form to use #define preprocessor to define a constant −
+                <p><h4><mark>#define identifier value</mark></h4>    
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">The const Keyword</h1>
+                <p>You can use const prefix to declare constants with a specific type as follows −
+                <p><h4><mark>const type variable = value;</mark></h4>     
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+         <div class="w3-bar">   
+            <div class="pagination justify-content-center">
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_cpp_1.html">1</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_cpp_2.html">2</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_cpp_3.html">3</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_cpp_4.html">4</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_cpp_5.html">5</a>
+                <a class="page-link" href="http://localhost:8085/LearnSpace/courses/course_cpp_6.html">6</a>
+                <a class="page-link" href="#">»</a>
+            </div>    
+         </div>      
+        </div>
+        </div>
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <!-- About -->
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_about">
+                            <div class="logo_container">
+                                <a href="#">
+                                    <div class="logo_content d-flex flex-row align-items-end justify-content-start">
+                                        <div class="logo_text">Learning Space</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="footer_about_text">
+                                <p>Choose Your course and Start Learning at your own pace. Start a Journey today with Learning Space.</p>
+                            </div>
+                            <div class="footer_social">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="copyright">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script> All rights reserved | Learning Space</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_links">
+                            <div class="footer_title">Quick menu</div>
+                            <ul class="footer_list">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_links">
+                            <div class="footer_title">Useful Links</div>
+                            <ul class="footer_list">
+                                <li><a href="courses.html">Courses</a></li>
+                                <li><a href="links.html">Links</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_contact">
+                            <div class="footer_title">Contact Us</div>
+                            <div class="footer_contact_info">
+                                <div class="footer_contact_item">
+                                    <div class="footer_contact_title">Address:</div>
+                                    <div class="footer_contact_line">Kenya, Nairobi, Karen House</div>
+                                </div>
+                                <div class="footer_contact_item">
+                                    <div class="footer_contact_title">Phone:</div>
+                                    <div class="footer_contact_line">0114745379</div>
+                                </div>
+                                <div class="footer_contact_item">
+                                    <div class="footer_contact_title">Email:</div>
+                                    <div class="footer_contact_line">learningspace@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
