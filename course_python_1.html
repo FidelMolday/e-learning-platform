@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Python</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<link rel="shortcut icon" href="favicon.png" type="x-icon">
+<link href="../plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/animate.css">
+<link href="../plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="main_style.css">
+<link rel="stylesheet" type="text/css" href="responsive.css">
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .w3-sidebar {
+        /*z-index: 3;*/
+        width: 250px;
+        top: 50px;
+        bottom: 0;
+        /*height: inherit;*/
+    }
+    
+    .w3-bar-item {
+        font-size: 13px;
+    }
+    
+    .w3-text-teal {
+        font-size: 25px;
+    }
+    
+    .tutorial img {
+        width: 1500px;
+        height: 150px;
+        padding-left: 250px;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="header" style="position:relative">
+
+
+
+        <!-- Header Content -->
+        <div class="header_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                            <div class="logo_container">
+                                <a href="#">
+                                    <div class="logo_content d-flex flex-row align-items-end justify-content-start">
+                                        <div class="logo_img"><img src="logo.png" alt=""></div>
+                                        <div class="logo_text">Learning Space</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <nav class="main_nav_contaner ml-auto">
+                                <ul class="main_nav">
+                                    <li><a href="index.html">home</a></li>
+                                    <li><a href="about.html">about us</a></li>
+                                    <li class="active"><a href="courses.html">courses</a></li>
+                                    <li><a href="contact.html">contact</a></li>
+                                </ul>
+                                <div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
+
+                                <!-- Hamburger -->
+
+                                <div class="hamburger menu_mm">
+                                    <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+                                </div>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Search Panel -->
+        <div class="header_search_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header_search_content d-flex flex-row align-items-center justify-content-end">
+                            <form action="#" class="header_search_form">
+                                <input type="search" class="search_input" placeholder="Search" required="required">
+                                <button class="header_search_button d-flex flex-column align-items-center justify-content-center">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Sidebar -->
+
+    <nav class="w3-sidebar w3-bar-block w3-collapse " id="mySidebar">
+
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="../images/course_5.jpg" alt="" style="height:220px; width: 260px">
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">OVERVIEW OF C LANGUAGE</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">C LANGUAGE FUNDAMENTALS</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">DATA INPUT AND OUTPUT</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">DECISION CONTROL STRUCTURES</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">LOOP CONTROL STRUCTURES</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">FUNCTIONS</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">PREPROCESSORS AND HEADER FILES</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">ARRAYS AND STRINGS</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">POINTERS</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">STRUCTURE AND UNION</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">FILE HANDLING</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">OTHER</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">OVERVIEW OF C LANGUAGE</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">C LANGUAGE FUNDAMENTALS</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">DATA INPUT AND OUTPUT</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">DECISION CONTROL STRUCTURES</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">LOOP CONTROL STRUCTURES</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">FUNCTIONS</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">PREPROCESSORS AND HEADER FILES</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">ARRAYS AND STRINGS</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">POINTERS</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">STRUCTURE AND UNION</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">FILE HANDLING</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">OTHER</a>
+
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <div class="tutorial">
+        <img src="Course_banner.jpg">
+    </div>
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+        <p> This C tutorial series will help you to get started in C programming language. By learning C, you will understand basic programming concepts.</p>
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Audience</h1>
+                <p>This C tutorial series has been designed for those who want to learn C programming; whether you are beginners or experts, tutorials are intended to cover basic concepts straightforwardly and systematically.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="w3-row">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Required Knowledge</h1>
+                <p>To learn C Programming language you haven't required any previous programming knowledge, but the basic understanding of any other programming languages will help you to understand the C programming concepts quickly.</p>
+            </div>
+
+        </div>
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">C Example</h1>
+                <p>A quick look at the example of Hello, World! In C programming, and detailed description is given in the C Program Structure page.</p>
+                <img src="helloWorld.png">
+                <img src="helloWorldOutput.jpg" style="height:300px; width: 500px">
+            </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a class="w3-button w3-black" href="#">1</a>
+                <a class="w3-button hover-black" href="#">2</a>
+                <a class="w3-button hover-black" href="#">3</a>
+                <a class="w3-button hover-black" href="#">4</a>
+                <a class="w3-button hover-black" href="#">5</a>
+                <a class="w3-button hover-black" href="#">»</a>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <!-- About -->
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_about">
+                            <div class="logo_container">
+                                <a href="#">
+                                    <div class="logo_content d-flex flex-row align-items-end justify-content-start">
+                                        <div class="logo_text">Learning Space</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="footer_about_text">
+                                <p>Choose Your course and Start Learning at your own pace. Start a Journey today with Learning Space.</p>
+                            </div>
+                            <div class="footer_social">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="copyright">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script> All rights reserved | Learning Space</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_links">
+                            <div class="footer_title">Quick menu</div>
+                            <ul class="footer_list">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_links">
+                            <div class="footer_title">Useful Links</div>
+                            <ul class="footer_list">
+                                <li><a href="courses.html">Courses</a></li>
+                                <li><a href="links.html">Links</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 footer_col">
+                        <div class="footer_contact">
+                            <div class="footer_title">Contact Us</div>
+                            <div class="footer_contact_info">
+                                <div class="footer_contact_item">
+                                    <div class="footer_contact_title">Address:</div>
+                                    <div class="footer_contact_line">India, West Bengal, Kolkata</div>
+                                </div>
+                                <div class="footer_contact_item">
+                                    <div class="footer_contact_title">Phone:</div>
+                                    <div class="footer_contact_line">+91 9876543210</div>
+                                </div>
+                                <div class="footer_contact_item">
+                                    <div class="footer_contact_title">Email:</div>
+                                    <div class="footer_contact_line">learningspace@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
